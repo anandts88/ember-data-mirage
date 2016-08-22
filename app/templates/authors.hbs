@@ -1,0 +1,15 @@
+<ul>
+  {{#each (reject-by "isNew" true model) as |author|}}
+    <li>
+      {{#link-to 'authors.author' author.id}}
+        {{author.id}}
+      {{/link-to}}
+    </li>
+  {{/each}}
+</ul>
+
+<div>
+  {{#link-to 'authors.add'}}Add{{/link-to}}
+</div>
+
+{{outlet}}
