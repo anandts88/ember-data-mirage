@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'my-mirage',
+    modulePrefix: 'ember-data-mirage',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',
